@@ -1,0 +1,20 @@
+/* Write your CSS here */
+.history-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  border-radius: 10px;
+}
+
+p {
+  color: black;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.delete-btn {
+  border: none;
+  background-color: transparent;
+}

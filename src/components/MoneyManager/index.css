@@ -1,0 +1,60 @@
+/* Write your CSS here */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.para {
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+span {
+  color: blue;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  background-color: blue;
+  color: antiquewhite;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 0px;
+}
+
+.ordered-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

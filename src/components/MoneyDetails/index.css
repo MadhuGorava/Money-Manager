@@ -1,0 +1,96 @@
+/* Write your CSS here */
+.money-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.balance-container {
+  background-color: #ecfccb;
+  border-radius: 8px;
+  border: 2px solid #84cc16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.balance-icon {
+  border-radius: 40px;
+  background-color: #84cc16;
+  border-width: 0px;
+  height: 60px;
+  width: 60px;
+  padding: 8px;
+}
+
+.income-container {
+  background-color: #cffafe;
+  border-radius: 8px;
+  border: 2px solid #06b6d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.income-icon {
+  border-radius: 40px;
+  background-color: #06b6d4;
+  border-width: 0px;
+  height: 60px;
+  width: 60px;
+  padding: 8px;
+}
+
+.expenses-container {
+  background-color: #ede9fe;
+  border-radius: 8px;
+  border: 2px solid #7c3aed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expenses-icon {
+  border-radius: 40px;
+  background-color: #7c3aed;
+  border-width: 0px;
+  height: 60px;
+  width: 60px;
+  padding: 8px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.description {
+  color: #7e858e;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.rupees {
+  font-size: 22px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.transaction-card {
+  border-radius: 10px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  margin-left: 7px;
+}
