@@ -37,6 +37,7 @@ class MoneyManager extends Component {
       transactionList: [...prevState.transactionList, newTransaction],
       title: '',
       amount: '',
+      displayText: '',
     }))
   }
 
@@ -48,8 +49,12 @@ class MoneyManager extends Component {
     this.setState({title: event.target.value})
   }
 
+  onChangeOption = event => {
+    this.setState({displayText: event.target.value})
+  }
+
   render() {
-    const {title, amount, transactionList} = this.state
+    const {title, amount, displayText, transactionList} = this.state
     return (
       <div className="app-container">
         <div className="nav-container">
@@ -94,8 +99,12 @@ class MoneyManager extends Component {
                 <br />
                 <select className="form-control" id="status">
                   {transactionTypeOptions.map(eachOption => (
-                    <option value={eachOption.optionId} selected>
-                      {eachOption.displayText}
+                    <option
+                      value={eachOption.optionId}
+                      selected
+                      onChange={this.onChangeOption}
+                    >
+                      {displayText}
                     </option>
                   ))}
                 </select>
@@ -115,7 +124,7 @@ class MoneyManager extends Component {
             <ul className="ordered-list">
               {transactionList.map(eachTitle => (
                 <TransactionItem
-                  key={eachTitle.optionId}
+                  key={eachTitle.displayText}
                   historyDetails={eachTitle}
                 />
               ))}
